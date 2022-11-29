@@ -1,9 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
+  height:100%;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+   background-color: #212121;
 }
 
 a {
@@ -15,12 +21,43 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.menu a {
+  @apply pt-2;
+  @apply rounded-sm;
+}
+.menu a:hover {
+  @apply bg-purple-500;
+  @apply bg-opacity-100;
+  @apply transition-colors;
+  @apply ease-linear;
+  @apply text-black;
+}
+
+.btn-ghost {
+  @apply pb-1;
+}
+
+.btn-ghost:hover {
+  @apply bg-purple-500;
+}
+
+.btn-ghost a:hover{
+  @apply transition-colors;
+  @apply ease-linear;
+  @apply text-black;
+}
+
+.btn-ghost a {
+  font-weight: bold;
+}
+
+#wrap {
+  min-height: 100%;
+  background-color: black;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left:0;
 }
