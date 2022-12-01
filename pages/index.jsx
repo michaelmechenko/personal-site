@@ -3,6 +3,9 @@ import Head from "next/head";
 import Navbar from "./components/Navbar";
 import IntroContainer from "./components/IntroContainer";
 import Footer from "./components/Footer";
+import History from "./components/History";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -24,13 +27,14 @@ export default function Home() {
         ></link>
       </Head>
 
-      <div id="wrap">
-        <main className="pb-0" data-theme="halloween">
+        <main className="main-wrapper w-full h-full">
             <Navbar />
             <IntroContainer />
+            <Projects />
+            <History />
+            <Contact />
         </main>
-      </div>
-      <Footer id="footer"></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 }

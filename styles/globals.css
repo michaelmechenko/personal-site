@@ -4,21 +4,19 @@
 
 html,
 body {
-  height:100%;
+  height: full;
+  overflow: auto;
+  scrollbar-base-color: antiquewhite;
+  scrollbar-color: antiquewhite;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-   background-color: #212121;
+  @apply bg-zinc-800;
 }
 
 a {
   color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .menu a {
@@ -26,7 +24,6 @@ a {
   @apply rounded-sm;
 }
 .menu a:hover {
-  @apply bg-purple-500;
   @apply bg-opacity-100;
   @apply transition-colors;
   @apply ease-linear;
@@ -37,27 +34,20 @@ a {
   @apply pb-1;
 }
 
-.btn-ghost:hover {
-  @apply bg-purple-500;
-}
-
 .btn-ghost a:hover{
   @apply transition-colors;
   @apply ease-linear;
-  @apply text-black;
+  @apply text-orange-500;
 }
 
 .btn-ghost a {
   font-weight: bold;
 }
 
-#wrap {
-  min-height: 100%;
-  background-color: black;
-}
+.main-image {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(255, 198, 132), rgb(255, 170, 59)) 1;
+  @apply rounded-md;
 
-.footer {
-  position: fixed;
-  bottom: 0;
-  left:0;
 }
