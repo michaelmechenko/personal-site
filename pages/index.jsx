@@ -3,7 +3,7 @@ import Head from "next/head";
 import Navbar from "./components/Navbar";
 import IntroContainer from "./components/IntroContainer";
 import Footer from "./components/Footer";
-import History from "./components/History";
+import Timeline from "./components/Timeline";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>website in dev</title>
+        <title>website in development</title>
         <meta name="description" content="michael's personal website" />
         <link
           rel="icon"
@@ -31,10 +31,10 @@ export default function Home() {
             <Navbar />
             <IntroContainer />
             <Projects />
-            <History />
+            <Timeline />
             <Contact />
         </main>
-      {/* <Footer></Footer> */}
+      <Footer />
     </>
   );
 }

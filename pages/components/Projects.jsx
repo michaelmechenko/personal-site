@@ -4,9 +4,11 @@ import ProjectItem from './ProjectItem';
 
 export default function Projects() {
    return (
-      <div className="mx-auto">
+      <div id="projects" className="mx-auto">
         <div className="mx-auto text-3xl underline text-orange-300 text-center pb-6">projects</div>
-         <div className="flex flex-row w-4/6 h-4/6 mx-auto space-x-6">
+         <div className="grid grid-cols-2 grid-rows-2 grid-flow-row-dense
+          mx-auto lg:w-1/3 lg:h-1/3 md:w-2/3 h-2/3
+          gap-14">
             {projects.map(project => (
                // eslint-disable-next-line react/jsx-key
                <ProjectItem 
